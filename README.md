@@ -17,18 +17,17 @@ O objetivo é ajudar usuários a organizar e lembrar seus horários de medicaç�
 ## 📂 Estrutura inicial do projeto
 
 Reminder
-┣ 📂 Sources
-┃ ┣ 📂 Features
-┃ ┃ ┗ 📂 Splash
-┃ ┃   ┣ SplashView.swift
-┃ ┃   ┗ SplashViewController.swift
-┃ ┣ 📂 Extensions
-┃ ┗ …
-┣ 📂 Assets
-┣ AppDelegate.swift
-┣ SceneDelegate.swift
-┗ Info.plist
-
+ ┣ 📂 Sources
+ ┃ ┣ 📂 Features
+ ┃ ┃ ┗ 📂 Splash
+ ┃ ┃   ┣ SplashView.swift
+ ┃ ┃   ┗ SplashViewController.swift
+ ┃ ┣ 📂 Extensions
+ ┃ ┗ ...
+ ┣ 📂 Assets
+ ┣ AppDelegate.swift
+ ┣ SceneDelegate.swift
+ ┗ Info.plist
 ---
 
 ## 🛠 Como rodar o projeto
