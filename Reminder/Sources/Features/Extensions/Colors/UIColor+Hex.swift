@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// Paleta de cores centralizadas para manter consistência visual e armazena as cores principais do app
 public struct Colors {
     static let redBase = UIColor(hex: "#C02636")
     static let redLight = UIColor(hex: "#EB3C4D")
@@ -15,6 +16,7 @@ public struct Colors {
     static let blueLight = UIColor(hex: "#6E83EC")
 }
 
+// Extensão para inicializar UIColor a partir de códicos hexadecimais (hex)
 extension UIColor {
     convenience init(hex: String, alpha: CGFloat = 1.0) {
         var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()

@@ -8,21 +8,27 @@
 import Foundation
 import UIKit
 
+
+// Controller responsável pela tela de Splash
 class SplashViewController: UIViewController {
     let contentView = SplashView()
     
+    // Chama o setup inicial
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setup()
     }
     
+    // Adiciona a view e esconde a Navigation Bar
     private func setup() {
         self.view.addSubview(contentView)
         self.navigationController?.isNavigationBarHidden = true
         
         setupConstraints()
     }
+    
+    // Ajusta p contentView para ocupar a tela toda
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             

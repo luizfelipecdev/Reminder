@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+// Tipografia centralizada do app (fonte, tamanho e peso)
+// Define estilos de texto padronizados
 public struct Typography {
     static let heading = UIFont.systemFont(ofSize: 20, weight: .heavy)
     static let subHeading = UIFont.systemFont(ofSize: 16, weight: .heavy)
