@@ -8,6 +8,13 @@
 import Foundation
 import UIKit
 
+public struct Colors {
+    static let redBase = UIColor(hex: "#C02636")
+    static let redLight = UIColor(hex: "#EB3C4D")
+    static let blueBase = UIColor(hex: "#334FDC")
+    static let blueLight = UIColor(hex: "#6E83EC")
+}
+
 extension UIColor {
     convenience init(hex: String, alpha: CGFloat = 1.0) {
         var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
