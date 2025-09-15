@@ -16,7 +16,9 @@ class SplashViewController: UIViewController {
     // Chama o setup inicial
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupGesture()
+
+        //Ciclo de decisão se vai para o login ou para o menu
         setup()
     }
     
@@ -24,21 +26,36 @@ class SplashViewController: UIViewController {
     private func setup() {
         self.view.addSubview(contentView)
         self.navigationController?.isNavigationBarHidden = true
-        
+        self.view.backgroundColor = Colors.Brand.redBase
         setupConstraints()
     }
     
-    // Ajusta p contentView para ocupar a tela toda
+    // Ajusta a contentView para ocupar a tela toda
     private func setupConstraints() {
+        contentView.translatesAutoresizingMaskIntoConstraints = false
+        
         NSLayoutConstraint.activate([
-            
             contentView.topAnchor.constraint(equalTo: view.topAnchor),
             contentView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
-        
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-        
     }
+    
+    private func setupGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showLoginBottomSheet))
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc
+    private func showLoginBottomSheet() {
+        let loginBottomSheet = LoginBottomSheetViewController()
+        loginBottomSheet.modalPresentationStyle = .overCurrentContext
+        loginBottomSheet.modalTransitionStyle = .crossDissolve
+        self.present(loginBottomSheet, animated: false){
+            loginBottomSheet.animateShow()
+        }
+
+    }
+    
 }

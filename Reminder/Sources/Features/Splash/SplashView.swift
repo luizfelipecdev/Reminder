@@ -34,7 +34,7 @@ class SplashView: UIView {
     
     // Configura UI inicial (cor de fundo, logo, etc.)
     private func setupUI() {
-        self.backgroundColor = Colors.redBase
+        self.backgroundColor = Colors.Brand.redBase
         self.addSubview(logoImageView)
         
         setupConstraints()

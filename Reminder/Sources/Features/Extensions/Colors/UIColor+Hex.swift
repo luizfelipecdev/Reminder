@@ -8,13 +8,27 @@
 import Foundation
 import UIKit
 
-// Paleta de cores centralizadas para manter consistência visual e armazena as cores principais do app
+// Paleta de cores centralizadas para manter consistência visual e armazena as Main Colors / GrayScale do app
 public struct Colors {
-    static let redBase = UIColor(hex: "#C02636")
-    static let redLight = UIColor(hex: "#EB3C4D")
-    static let blueBase = UIColor(hex: "#334FDC")
-    static let blueLight = UIColor(hex: "#6E83EC")
+    struct Brand {
+        static let redBase = UIColor(hex: "#C02636")
+        static let redLight = UIColor(hex: "#EB3C4D")
+        static let blueBase = UIColor(hex: "#334FDC")
+        static let blueLight = UIColor(hex: "#6E83EC")
+    }
+    
+    struct Neutral {
+        static let gray100 = UIColor(hex: "#17222B")
+        static let gray200 = UIColor(hex: "#293C4C")
+        static let gray300 = UIColor(hex: "#4D708F")
+        static let gray400 = UIColor(hex: "#A2B9CD")
+        static let gray500 = UIColor(hex: "#CAD7E2")
+        static let gray600 = UIColor(hex: "#D7E1EA")
+        static let gray700 = UIColor(hex: "#E8EEF3")
+        static let gray800 = UIColor(hex: "#CAD7E2")
+    }
 }
+
 
 // Extensão para inicializar UIColor a partir de códicos hexadecimais (hex)
 extension UIColor {

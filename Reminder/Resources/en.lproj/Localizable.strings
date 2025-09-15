@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Reminder
+
+  Created by Luiz Felipe Aparecido do Couto on 14/09/25.
+  
+*/
+
+/* MARK: - LOGIN Screen */
+
+"login.label.title" = "Entre para acessar suas receitas";
+"login.title.email" = "E-mail";
+"login.email.placeholder" = "email@examplo.com";
+"login.title.password" = "Senha";
+"login.button.title" = "Entrar";
+
+/* MARK: - HOME Screen */
+
+/* MARK: - Receitps Screen */
+
+/* MARK: - NewReceipt Screen */
