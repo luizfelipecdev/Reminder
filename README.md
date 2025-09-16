@@ -51,6 +51,6 @@ O objetivo é ajudar usuários a organizar e lembrar seus horários de medicaç�
 
 ⸻
 
-✨ Autor
+Autor
 
-Desenvolvido por Luiz Felipe Aparecido do Couto 🚀
+Desenvolvido por Luiz Felipe Aparecido do Couto
