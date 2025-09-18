@@ -25,7 +25,7 @@ public struct Colors {
         static let gray500 = UIColor(hex: "#CAD7E2")
         static let gray600 = UIColor(hex: "#D7E1EA")
         static let gray700 = UIColor(hex: "#E8EEF3")
-        static let gray800 = UIColor(hex: "#CAD7E2")
+        static let gray800 = UIColor(hex: "#F8FAFB")
     }
 }
 

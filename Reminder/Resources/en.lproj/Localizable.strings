@@ -9,9 +9,9 @@
 /* MARK: - LOGIN Screen */
 
 "login.label.title" = "Entre para acessar suas receitas";
-"login.title.email" = "E-mail";
-"login.email.placeholder" = "email@examplo.com";
-"login.title.password" = "Senha";
+"login.email.label.title" = "E-mail";
+"login.email.placeholder" = "email@exemplo.com";
+"login.password.label.title" = "Senha";
 "login.button.title" = "Entrar";
 
 /* MARK: - HOME Screen */
