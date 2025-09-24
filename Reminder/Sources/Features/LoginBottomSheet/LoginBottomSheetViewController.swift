@@ -10,11 +10,13 @@ import UIKit
 
 class LoginBottomSheetViewController: UIViewController {
     let loginView = LoginBottomSheelView()
+    let viewModel = LoginBottomSheetViewModel()
     var handleAreaHeight: CGFloat = 50.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loginView.delegate = self
         setupUI()
         setupGesture()
     }
@@ -37,11 +39,11 @@ class LoginBottomSheetViewController: UIViewController {
     }
     
     private func setupGesture() {
-        
+        // proximas aulas
     }
     
     private func handlePanGesture() {
-        
+        // proximas aulas
     }
     
     public func animateShow(completion: (() -> Void)? = nil) {
@@ -55,4 +57,11 @@ class LoginBottomSheetViewController: UIViewController {
             
         }
     }
+}
+
+extension LoginBottomSheetViewController: LoginBottomSheetViewDelegate {
+    func sendLoginData(user: String, password: String) {
+        viewModel.doAuth(usernameLogin: user, password: password)
+    }
+     
 }

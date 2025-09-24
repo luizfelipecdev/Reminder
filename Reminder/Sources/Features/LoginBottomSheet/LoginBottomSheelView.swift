@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class LoginBottomSheelView: UIView {
+    public weak var delegate: LoginBottomSheetViewDelegate?
     
     private let titleLabel: UILabel = {
         let label = UILabel()
@@ -63,6 +64,7 @@ class LoginBottomSheelView: UIView {
         let button = UIButton(type: .system )
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("login.button.title".localized, for: .normal)
+        button.addTarget(self, action: #selector(loginButtonDidTapeed), for: .touchUpInside)
         button.backgroundColor = Colors.Brand.redBase
         button.layer.cornerRadius = Metrics.medium
         button.setTitleColor(Colors.Neutral.gray800, for: .normal)
@@ -132,6 +134,13 @@ class LoginBottomSheelView: UIView {
             loginButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -Metrics.huge),
             loginButton.heightAnchor.constraint(equalToConstant: Metrics.buttonSize)
         ])
+    }
+    
+    @objc
+    private func loginButtonDidTapeed() {
+        let user = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        delegate?.sendLoginData(user: user, password: password)
     }
     
 }
